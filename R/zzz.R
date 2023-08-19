@@ -1,0 +1,2 @@
+
+.onLoad <- function(libpath, pkgname) {}
