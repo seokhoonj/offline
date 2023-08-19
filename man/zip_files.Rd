@@ -16,3 +16,14 @@ zip_files(files, flags = "-r9X", split_size)
 \description{
 utils::zip with some default values
 }
+\details{
+\itemize{
+\item -r  recurse into directories
+\item -0  store only
+\item -1  compress faster
+\item -9  compress better
+\item -X  eXclude eXtra file attributes
+\item -q  quiet operation
+\item -s  split size
+}
+}

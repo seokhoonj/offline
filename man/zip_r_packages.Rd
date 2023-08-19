@@ -15,11 +15,13 @@ zip_r_packages(flags = "-r9X", split_size)
 Create installed R packages zip archive
 }
 \details{
--r  recurse into directories
--0  store only
--1  compress faster
--9  compress better
--X  eXclude eXtra file attributes
--q  quiet operation
--s  split size
+\itemize{
+\item -r  recurse into directories
+\item -0  store only
+\item -1  compress faster
+\item -9  compress better
+\item -X  eXclude eXtra file attributes
+\item -q  quiet operation
+\item -s  split size
+}
 }
