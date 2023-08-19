@@ -1,6 +1,5 @@
 ##' Create zip archive
 ##'
-##' @description
 ##' utils::zip with some default values
 ##'
 ##' @details
