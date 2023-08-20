@@ -18,7 +18,7 @@
 ##' @param split_size A numeric value of split size (Megabyte)
 ##' @export
 zip_files <- function(files, flags = "-r9X", split_size) {
-  zipfile <- sprintf("%s.zip", files)
+  zipfile <- sprintf("%s.zip", tools::file_path_sans_ext(basename(files)))
   if (!missing(split_size))
      flags <- paste(flags, sprintf("-s %dm", split_size))
   utils::zip(zipfile = zipfile, files = files, flags = flags)
@@ -42,7 +42,7 @@ zip_files <- function(files, flags = "-r9X", split_size) {
 ##' @export
 zip_r_packages <- function(flags = "-r9X", split_size) {
   path <- .libPaths()[1L]
-  zipfile <- sprintf("%s.zip", basename(path))
+  zipfile <- sprintf("%s.zip", tools::file_path_sans_ext(basename(files)))
   if (!missing(split_size))
      flags <- paste(flags, sprintf("-s %dm", split_size))
   utils::zip(zipfile = zipfile, files = path, flags = flags)
