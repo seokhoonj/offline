@@ -17,10 +17,11 @@ devtools::install_github("seokhoonj/offline")
 ``` r
 library(offline)
 
-get_project_tools() # links of R, Rtools, RStudio etc 
-zip_file("_your_download_path_/R-4.3.1-win.exe")
-zip_file("_your_download_path_/Rtools43-5550-5548.exe")
-zip_file("_your_download_path_/RStudio-2023.06.1-524.exe")
+link_tools() # links of R, Rtools, RStudio etc 
+download_tools()
+zip_file("R-4.3.1-win.exe")
+zip_file("Rtools43-5550-5548.exe")
+zip_file("RStudio-2023.06.1-524.exe")
 install_project_packages() # install packages you want
 zip_r_packages()
 
