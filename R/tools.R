@@ -32,6 +32,6 @@ download_tools <- function(tools = c("R", "Rtools", "RStudio")) {
   on.exit(options(op))
   invisible(lapply(
     tool_list[names(tool_list) %in% tools],
-    function(x) download.file(x, basename(x))
+    function(x) utils::download.file(x, basename(x))
   ))
 }
