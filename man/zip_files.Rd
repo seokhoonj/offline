@@ -17,6 +17,7 @@ zip_files(files, flags = "-r9X", split_size)
 utils::zip with some default values
 }
 \details{
+flag options
 \itemize{
 \item -r  recurse into directories
 \item -0  store only

@@ -15,6 +15,7 @@ zip_r_packages(flags = "-r9X", split_size)
 Create installed R packages zip archive
 }
 \details{
+flag options
 \itemize{
 \item -r  recurse into directories
 \item -0  store only
