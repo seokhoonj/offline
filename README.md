@@ -19,9 +19,9 @@ library(offline)
 
 link_tools() # links of R, Rtools, RStudio etc 
 download_tools()
-zip_file("R-4.3.1-win.exe")
-zip_file("Rtools43-5550-5548.exe")
-zip_file("RStudio-2023.06.1-524.exe")
+zip_files("R-4.3.1-win.exe")
+zip_files("Rtools43-5550-5548.exe")
+zip_files("RStudio-2023.06.1-524.exe")
 install_project_packages() # install packages you want
 zip_r_packages()
 
