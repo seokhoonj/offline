@@ -59,11 +59,11 @@ install_packages <- function(packages) {
     if (length(pkgs_list) > 1 & pkgs_list[1L] == pkg)
       stop("Installing '", pkg, "' is failed.")
   }
-  devtools::install_github("seokhoonj/ecos", force = TRUE)
-  devtools::install_github("seokhoonj/kosis", force = TRUE)
-  devtools::install_github("seokhoonj/papagor", force = TRUE)
-  devtools::install_github("seokhoonj/navergmail", force = TRUE)
-  devtools::install_github("seokhoonj/vuw", force = TRUE)
+  devtools::install_github("seokhoonj/ecos")
+  devtools::install_github("seokhoonj/kosis")
+  devtools::install_github("seokhoonj/papagor")
+  devtools::install_github("seokhoonj/navergmail")
+  devtools::install_github("seokhoonj/vuw")
 }
 
 ##' @rdname install_packages
