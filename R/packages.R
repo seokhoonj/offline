@@ -30,12 +30,12 @@ install_packages <- function(packages) {
     , "Rfast", "rgl", "rglwidget", "ridge", "rintrojs", "rio", "rJava", "rlang"
     , "rmarkdown", "RMySQL", "ROCR", "RODBC", "roxygen2", "rpart", "rpart.plot"
     , "RSQLite", "rstudioapi", "sampling", "scales", "scatterplot3d", "segmented"
-    , "shiny", "shinyBS", "shinycssloaders", "shinydashboard", "shinyjs", "shinymanager"
+    , "shiny", "shinyBS", "shinycssloaders", "shinydashboard", "shinyFiles", "shinyjs", "shinymanager"
     , "shinyWidgets", "showtext", "slickR", "snpsettest", "sparcl", "statmod"
     , "stplanr", "stringi", "stringr", "survival", "survminer"
     , "tensorflow", "testthat", "textclean", "tibble", "tidybayes", "tidymodels"
     , "tidyr", "tidytext", "tm", "topicmodels", "TraMineR", "treemap", "truncreg"
-    , "tseries", "tweedie", "utf8", "vars", "vcd", "VGAM", "VIM", "wordcloud"
+    , "tseries", "tweedie", "utf8", "vars", "vcd", "VGAM", "VIM", "wordcloud", "writexl"
     , "xgboost", "xlsx", "XML", "xtable"
     )
   avbl_pkgs <- data.table::data.table(utils::available.packages())
@@ -91,6 +91,7 @@ install_project_packages <- function() {
   , "shinyBS"
   , "shinycssloaders"
   , "shinydashboard"
+  , "shinyFiles"
   , "shinyjs"
   , "shinyWidgets"
   , "statmod"
@@ -101,6 +102,7 @@ install_project_packages <- function() {
   , "tweedie"
   , "usethis"
   , "visNetwork"
+  , "writexl"
   , "xgboost"
   )
   install_packages(project_packages)
